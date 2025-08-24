@@ -1,78 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Schedule for TechCon 2024</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - TechCon 2024</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
-
-  <header>
-    <h1>Schedule for TechCon 2024</h1>
+    <header>
+        <div class="container header-content">
+            <div class="logo">TechCon 2024</div>
+            <p>The Premier Technology Conference | June 15-18, 2024 | San Francisco, CA</p>
+        </div>
+    </header>
+    
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <div class="container">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html" class="active">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
+    
+    <main class="container">
+        <div class="schedule-intro">
+            <h1>Conference Schedule</h1>
+            <p>Explore four days of inspiring talks, hands-on workshops, and networking opportunities with technology leaders and innovators from around the world.</p>
+            
+            <div class="highlight">
+                <p>All times are in Pacific Daylight Time (PDT). Schedule is subject to change.</p>
+            </div>
+        </div>
+        
+        <div class="days-tabs">
+            <button class="day-tab active" data-day="day1">Day 1: June 15</button>
+            <button class="day-tab" data-day="day2">Day 2: June 16</button>
+            <button class="day-tab" data-day="day3">Day 3: June 17</button>
+            <button class="day-tab" data-day="day4">Day 4: June 18</button>
+        </div>
+        
+        <div class="schedule-day active" id="day1">
+            <h2>Day 1: Opening & Keynotes</h2>
+            
+            <div class="time-slots">
+                <div class="time-slot keynote">
+                    <div class="time">8:00 AM - 9:00 AM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Registration & Welcome Coffee</h3>
+                        <p class="session-desc">Check-in, grab your conference materials, and network with fellow attendees.</p>
+                    </div>
+                    <div class="session-location">Main Lobby</div>
+                </div>
+                
+                <div class="time-slot keynote">
+                    <div class="time">9:00 AM - 9:30 AM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Opening Remarks</h3>
+                        <p class="session-speaker">By Sarah Johnson, Conference Director</p>
+                        <p class="session-desc">Official welcome and overview of TechCon 2024.</p>
+                    </div>
+                    <div class="session-location">Grand Ballroom</div>
+                </div>
+                
+                <div class="time-slot keynote">
+                    <div class="time">9:30 AM - 10:30 AM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Keynote: The Future of AI</h3>
+                        <p class="session-speaker">By Dr. Amanda Chen, AI Research Lead</p>
+                        <p class="session-desc">Exploring the next decade of artificial intelligence and its impact on society.</p>
+                    </div>
+                    <div class="session-location">Grand Ballroom</div>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time">10:30 AM - 11:00 AM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Morning Break</h3>
+                        <p class="session-desc">Refreshments and networking opportunity.</p>
+                    </div>
+                    <div class="session-location">Exhibition Hall</div>
+                </div>
+                
+                <div class="time-slot panel">
+                    <div class="time">11:00 AM - 12:30 PM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Panel: Ethics in Technology</h3>
+                        <p class="session-speaker">Moderated by Michael Rodriguez</p>
+                        <p class="session-desc">Industry leaders discuss the ethical implications of emerging technologies.</p>
+                    </div>
+                    <div class="session-location">Room 101A</div>
+                </div>
+                
+                <div class="time-slot workshop">
+                    <div class="time">11:00 AM - 12:30 PM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Hands-On: Cloud Native Development</h3>
+                        <p class="session-speaker">By James Wilson, Cloud Architect</p>
+                        <p class="session-desc">Practical workshop on building cloud-native applications.</p>
+                    </div>
+                    <div class="session-location">Room 201B</div>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time">12:30 PM - 1:30 PM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Lunch Break</h3>
+                        <p class="session-desc">Buffet lunch served in the exhibition hall.</p>
+                    </div>
+                    <div class="session-location">Exhibition Hall</div>
+                </div>
+                
+                <div class="time-slot">
+                    <div class="time">1:30 PM - 5:00 PM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Afternoon Sessions</h3>
+                        <p class="session-desc">Various technical talks and workshops running in parallel.</p>
+                    </div>
+                    <div class="session-location">Multiple Rooms</div>
+                </div>
+                
+                <div class="time-slot networking">
+                    <div class="time">6:00 PM - 8:00 PM</div>
+                    <div class="session-info">
+                        <h3 class="session-title">Welcome Reception</h3>
+                        <p class="session-desc">Networking event with drinks and appetizers.</p>
+                    </div>
+                    <div class="session-location">Skyline Terrace</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="schedule-day" id="day2">
+            <h2>Day 2: Deep Dive Sessions</h2>
+            <p>Detailed schedule for Day 2 will be available soon.</p>
+        </div>
+        
+        <div class="schedule-day" id="day3">
+            <h2>Day 3: Workshops & Labs</h2>
+            <p>Detailed schedule for Day 3 will be available soon.</p>
+        </div>
+        
+        <div class="schedule-day" id="day4">
+            <h2>Day 4: Future Trends & Closing</h2>
+            <p>Detailed schedule for Day 4 will be available soon.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="register.html" class="btn">Register Now</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechCon 2024</h3>
+                    <p>June 15-18, 2024</p>
+                    <p>San Francisco, CA</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="schedule.html">Schedule</a></p>
+                    <p><a href="speakers.html">Speakers</a></p>
+                    <p><a href="register.html">Register</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <main>
-    <table>
-      <caption>Detailed Schedule of Events for TechCon 2024</caption>
-      <thead>
-        <tr>
-          <th scope="col">Time</th>
-          <th scope="col">Session</th>
-          <th scope="col">Speaker</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>09:00 - 10:00</td>
-          <td>Opening Keynote</td>
-          <td>Dr. Ayanna Howard</td>
-        </tr>
-        <tr>
-          <td>10:15 - 11:00</td>
-          <td>AI and Ethics in Africa</td>
-          <td>Rebecca Enonchong</td>
-        </tr>
-        <tr>
-          <td>11:15 - 12:00</td>
-          <td>Start-Up Pitch Showcase</td>
-          <td>Panel of Judges</td>
-        </tr>
-        <tr>
-          <td>12:15 - 13:00</td>
-          <td>Lunch & Networking</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>13:15 - 14:00</td>
-          <td>Cybersecurity for African Enterprises</td>
-          <td>Thoko Mokgosi-Mwantembe</td>
-        </tr>
-        <tr>
-          <td>14:15 - 15:00</td>
-          <td>Future of Space Tech (Virtual)</td>
-          <td>Elon Musk</td>
-        </tr>
-        <tr>
-          <td>15:15 - 16:00</td>
-          <td>Closing Panel: Tech for Good</td>
-          <td>All Speakers</td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
-
- <footer>
-    <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
-  </footer>
-
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.day-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and days
+                document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.schedule-day').forEach(d => d.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding day
+                const dayId = tab.getAttribute('data-day');
+                document.getElementById(dayId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
